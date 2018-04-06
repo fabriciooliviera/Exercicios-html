@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<center>
+<script>
+    function primeiraFruta() {
+		var matricula = prompt("Qual o numero da matricula?");
+		document.getElementById('f1').innerHTML = matricula;
+		
+		var nome = prompt("Qual o seu nome?");
+		document.getElementById('f2').innerHTML = nome;
+		
+		var horas = prompt("quantas horas trabalhadas?");
+		document.getElementById('f3').innerHTML = horas;
+		
+		var valorhora = prompt(" Qual valor da hora?");
+		document.getElementById('f4').innerHTML = valorhora;
+         var salario = valorhora*horas;
+	     document.getElementById('l1').innerHTML = "R$ " +salario;
+	
+	}
+	
+	
+
+</script>
+</head>
+<body onload="primeiraFruta();" >
+<table id="tabela" border="1">
+    <tr>
+        <th>Matricula</th>
+		<th>nome</th>
+        <th>horas trabalhada</th>
+        <th>valor da hora</th>
+		
+		
+    </tr>
+    <tr >
+        <td id="f1"/>
+        <td id="f2"/>
+        <td id="f3"/>
+		<td id="f4"/>
+		
+    </tr>
+   <tr> <td id = "l1" colspan = "4"></td> </tr>
+</table>
+
+</center>
+</body>
+</html>
